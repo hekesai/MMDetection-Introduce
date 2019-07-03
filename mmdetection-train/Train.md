@@ -6,10 +6,10 @@
   #### step2 具体有两种方法，
   ##### *method 1* ：以coco的数据格式为基础，修改各个文件。具体为：
   ##### a、定义数据种类，定义数据种类，需要修改的地方在mmdetection/mmdet/datasets/coco.py。把CLASSES的那个tuple改为自己数据集对应的种类tuple即可.
- ![Alt text](./Train/WechatIMG201.png)
+  ![Alt text](./Train/WechatIMG201.png)
 
   ##### b、接着在mmdetection/mmdet/core/evaluation/class_names.py修改coco_classes数据集类别，这个关系到后面test的时候结果图中显示的类别名称。
- ![Alt text](./Train/WechatIMG202.png)
+  ![Alt text](./Train/WechatIMG202.png)
 
   ##### c、修改configs/***.py中的model字典中的num_classes、data字典中的img_scale和optimizer中的lr(学习率)。见 *修改配置文件* 步骤
   
