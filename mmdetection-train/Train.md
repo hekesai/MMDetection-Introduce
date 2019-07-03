@@ -16,20 +16,20 @@
   ##### *method 2* ：定义自己的数据集格式（waiting）
   
 - ### 修改配置文件
- ##### 以configs/cascade_rcnn_x101_64x4d_fpn_1x.py为例：
- ##### 1、修改 config 中数据集
- ![Alt text](./Train/WechatIMG203.png)
- ##### 2、修改num_classes：
- ###### 不同的detector中：修改num_classes 个数不同。
- ![Alt text](./Train/WechatIMG204.png)
- ##### 3、修改学习率：
- ##### 当gpu数量为8时, lr=0.02；当gpu数量为4时,lr=0.01；当gpu个数为1，所以设置lr=0.0025
- ![Alt text](./Train/WechatIMG205.png)
- ##### 4、详细见 mmdetection-train/cascade_rcnn_x101_64x4d_fpn_1x.py（后续会逐渐添加注释信息）
+  ##### 以configs/cascade_rcnn_x101_64x4d_fpn_1x.py为例：
+  ##### 1、修改 config 中数据集
+  ![Alt text](./Train/WechatIMG203.png)
+  ##### 2、修改num_classes：
+  ###### 不同的detector中：修改num_classes 个数不同。
+  ![Alt text](./Train/WechatIMG204.png)
+  ##### 3、修改学习率：
+  ##### 当gpu数量为8时, lr=0.02；当gpu数量为4时,lr=0.01；当gpu个数为1，所以设置lr=0.0025
+  ![Alt text](./Train/WechatIMG205.png)
+  ##### 4、详细见 mmdetection-train/cascade_rcnn_x101_64x4d_fpn_1x.py（后续会逐渐添加注释信息）
 
 - ### 训练命令行解析
- #### 1、单gpu 训练：
- ![Alt text](./Train/WechatIMG206.png)
+  #### 1、单gpu 训练：
+  ![Alt text](./Train/WechatIMG206.png)
 
- ##### *python tools/train.py  configs/cascade_rcnn_x101_64x4d_fpn_1x.py   --work_dir   mmdetection/work_dir*
- #### 2、多gpu 训练(waiting)
+  ##### *python tools/train.py  configs/cascade_rcnn_x101_64x4d_fpn_1x.py   --work_dir   mmdetection/work_dir*
+  #### 2、多gpu 训练(waiting)
