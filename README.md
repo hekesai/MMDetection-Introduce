@@ -3,7 +3,7 @@
 ## Introduce
 以open-mmlab发布的mmdetection 为基础，分为train、inference以及annotation三个部分。
 
-##Major features
+## Major features
 - ### mmdetection-train
    ##### 此模块主要介绍使用mmdetection框架如何训练，以cascade_rcnn为例。
    ##### 1、数据集转换
