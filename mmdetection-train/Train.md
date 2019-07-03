@@ -33,3 +33,11 @@
 
   ##### *python tools/train.py  configs/cascade_rcnn_x101_64x4d_fpn_1x.py   --work_dir   mmdetection/work_dir*
   #### 2、多gpu 训练(waiting)
+- ### 绘制loss 曲线
+  #### 1、查看***.log.json 文件中的使用的具体loss
+  #### 2、修改*mmdetection/tools/analyze_logs.py*
+  ![Alt text](./Train/WechatIMG209.png)
+  ##### 运行：*python tools/analyze_logs.py plot_curve work_dirs/****.log.json*
+  ##### 如图：
+  ![Alt text](./Train/loss.png)
+
