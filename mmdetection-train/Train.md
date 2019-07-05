@@ -25,7 +25,8 @@
   ##### 3、修改学习率：
   ##### 当gpu数量为8时, lr=0.02；当gpu数量为4时,lr=0.01；当gpu个数为1，所以设置lr=0.0025
   ![Alt text](./Train/WechatIMG205.png)
-  ##### 4、详细见 mmdetection-train/cascade_rcnn_x101_64x4d_fpn_1x.py（后续会逐渐添加注释信息）
+  
+##### 4、详细见 mmdetection-train/cascade_rcnn_x101_64x4d_fpn_1x.py（后续会逐渐添加注释信息）
 
 - ### 训练命令行解析
   #### 1、单gpu 训练：
@@ -33,6 +34,7 @@
 
   ##### *python tools/train.py  configs/cascade_rcnn_x101_64x4d_fpn_1x.py   --work_dir   mmdetection/work_dir*
   #### 2、多gpu 训练(waiting)
+  
 - ### 绘制loss 曲线
   #### 1、查看***.log.json 文件中的使用的具体loss
   #### 2、修改*mmdetection/tools/analyze_logs.py*
@@ -40,4 +42,12 @@
   ##### 运行：*python tools/analyze_logs.py plot_curve work_dirs/****.log.json*
   ##### 如图：
   ![Alt text](./Train/loss.png)
+  
+  ##### ps *analyze_logs.py* 可以查看train time 包括slowest epoch、faster epoche 、average iter time … 具体调用方法为：*python tools/analyze_logs.py cal_train_time work_dirs/***.log.json* 具体如图：
+  ![Alt text](./Train/WechatIMG210.png)
+  
+  
+  
+  
+  
 
