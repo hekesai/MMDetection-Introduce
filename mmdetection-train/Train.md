@@ -1,7 +1,7 @@
 # Train
 - ### 数据集准备（以coco格式的数据集为例）
   #### step 1 前期准备：将自己的数据集转换为coco格式的数据集。
-  ##### 1、labelImg2coco.py: 将labelImg 格式数据转为 coco数据集格式
+  ##### 1、labelImg2coco.py: 将labelImg 格式数据转为 coco数据集格式(ps: labelImg 可以直接使用voc格式的数据集，修改的方法与coco大致一直)
   ##### 2、labelme2coco: 将labelme 格式的数据转为 coco数据集格式 [here](https://github.com/ming71/toolbox)
   #### step2 具体有两种方法，
   ##### *method 1* ：以coco的数据格式为基础，修改各个文件。具体为：
