@@ -235,7 +235,7 @@ log_config = dict(
     ])
 # yapf:enable
 # runtime settings
-total_epochs = 100000  #总的轮数
+total_epochs = 12  #总的轮数
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
 work_dir = './work_dirs/cascade_rcnn_x101_64x4d_fpn_1x' #model以及loss 日志的保存 path
