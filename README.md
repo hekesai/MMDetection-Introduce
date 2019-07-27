@@ -11,7 +11,7 @@
    ##### 3、训练时，命令行参数解析
    ##### 4、绘制 loss 曲线
    ##### MMDetection 为基础训练的cascade rcnn的检测sample：
-   ![Alt text](mmdetection-train/train/sample.jpg)
+   ![Alt text](./mmdetection-train/train/sample.jpg)
    
    
 - ### mmdetection-inference
